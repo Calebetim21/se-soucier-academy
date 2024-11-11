@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Se Soucier Academy Blog - Insights and updates on domestic service training.">
+  <title>Blog | Se Soucier Academy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/views/index.html"><img src="/public/images/logo.png" alt="Se Soucier Academy Logo" width="50" height="50" class="d-inline-block align-top">Se Soucier Academy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/views/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/views/blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/views/newsletter.html">Newsletter</a></li>
+          <li class="nav-item"><a class="nav-link" href="/views/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center">Blog</h1>
+    <p class="text-center">Latest updates and insights from Se Soucier Academy.</p>
+
+    <!-- Blog Post Form for Admin -->
+    <div class="blog-form my-4">
+      <h3>Add New Blog Post</h3>
+      <form action="/upload-blog" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea class="form-control" id="content" name="content" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="file" class="form-control-file" id="image" name="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload Blog Post</button>
+      </form>
+    </div>
+
+    <!-- Blog Post Listings -->
+    <div class="blog-posts mt-5">
+      <!-- Placeholder for dynamically loaded blog content -->
+      <h3>Blog Posts</h3>
+      <div class="blog-post">
+        <h4>Sample Blog Post Title</h4>
+        <p>This is a sample blog post. Admin can upload new content here.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Se Soucier Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="public/js/scripts.js"></script>
+</body>
+</html>

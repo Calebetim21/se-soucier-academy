@@ -1,0 +1,49 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/public/images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Logo styling in the navbar */
+.navbar-brand img {
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+/* About Us Section */
+.about-us {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-us h2 {
+  color: #0a0a5a;
+}
+
+/* Footer */
+footer {
+  background-color: navy;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us {
+    padding: 40px 20px;
+  }
+}
