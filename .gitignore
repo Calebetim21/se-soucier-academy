@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Temporary and cache files
+tmp/
+temp/
+
+# Public vendor files
+public/vendor/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Database configuration (if storing credentials directly)
+config/db.js
